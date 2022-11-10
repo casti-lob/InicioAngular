@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { Contador } from './contador/contador.component';
 import { ListaComponent } from './lista/lista.component';
 import { AlumnosModule } from './alumnos/alumnos.module';
+import { MainPageComponent } from './brawl-stars/main-page/main-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     Contador,
-    ListaComponent
+    ListaComponent,
+    MainPageComponent
    
     
   ],
