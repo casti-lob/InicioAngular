@@ -1,3 +1,16 @@
 <h1>Brawl Stars</h1>
 <hr>
+<div class="row">
+    <div class="col">
+        <h3 >Personajes</h3>
+        <hr>
+        <ul>
+            <li *ngFor="let item of players; ">
+                {{item.name}} - <health [ngClass]="{'green': item.health>3001, 'yellow': item.health>1001 && item.health <3001, 'red': item.health<1001}">{{item.health}}</health>
+               
+                
+            </li>
+        </ul>
+    </div>
+</div>
 
