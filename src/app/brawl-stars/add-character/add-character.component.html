@@ -1,1 +1,7 @@
 <p>add-character works!</p>
+
+<form (ngSubmit)="addPlayer()">
+    <input type="text" name="name" id="name" [(ngModel)]="nuevo.name">
+    <input type="number" name="health" id="health" [(ngModel)]="nuevo.health">
+    <button type="submit">Add</button>
+</form>

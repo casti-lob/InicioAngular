@@ -15,11 +15,7 @@
     </div>
     <div class="col">
         <h3>Add player</h3>
-        <form (ngSubmit)="addPlayer()">
-            <input type="text" name="name" id="name" [(ngModel)]="nuevo.name">
-            <input type="number" name="health" id="health" [(ngModel)]="nuevo.health">
-            <button type="submit">Add</button>
-        </form>
+        <app-add-character [nuevo]="nuevo" [players]="players"></app-add-character>
     </div>
 </div>
 

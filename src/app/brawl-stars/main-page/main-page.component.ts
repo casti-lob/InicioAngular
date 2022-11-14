@@ -27,10 +27,7 @@ export class MainPageComponent implements OnInit {
     { name: 'Arthur', health: 3100},
 ]
   
-addPlayer(){
-  this.players.push(this.nuevo)
-  console.log(this.nuevo);
-}
+
  
 
 }
