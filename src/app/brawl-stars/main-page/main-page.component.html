@@ -4,13 +4,23 @@
     <div class="col">
         <h3 >Personajes</h3>
         <hr>
-        <ul>
+        <!-- <ul>
             <li *ngFor="let item of players; ">
                 {{item.name}} - <health [ngClass]="{'green': item.health>3001, 'yellow': item.health>1001 && item.health <3001, 'red': item.health<1001}">{{item.health}}</health>
                
                 
             </li>
-        </ul>
+        </ul> -->
+        <app-character [characters]="players"></app-character>
+    </div>
+    <div class="col">
+        <h3>Add player</h3>
+        <form (ngSubmit)="addPlayer()">
+            <input type="text" name="name" id="name" [(ngModel)]="nuevo.name">
+            <input type="number" name="health" id="health" [(ngModel)]="nuevo.health">
+            <button type="submit">Add</button>
+        </form>
     </div>
 </div>
+
 

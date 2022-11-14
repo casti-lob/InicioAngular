@@ -10,6 +10,12 @@ export class MainPageComponent implements OnInit {
   constructor() { }
   ngOnInit(): void {
   }
+
+  nuevo={
+    name: "",
+    health: 0
+  }
+
   players : Player[]=[
     { name: 'Shelly', health: 3600},
     { name: 'Nita', health: 3800},
@@ -21,7 +27,10 @@ export class MainPageComponent implements OnInit {
     { name: 'Arthur', health: 3100},
 ]
   
-
+addPlayer(){
+  this.players.push(this.nuevo)
+  console.log(this.nuevo);
+}
  
 
 }

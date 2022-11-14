@@ -1,0 +1,7 @@
+<ul>
+    <li *ngFor="let item of characters; ">
+        {{item.name}} - <health [ngClass]="{'green': item.health>3001, 'yellow': item.health>1001 && item.health <3001, 'red': item.health<1001}">{{item.health}}</health>
+       
+        
+    </li>
+</ul>

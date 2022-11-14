@@ -5,20 +5,22 @@ import { AppComponent } from './app.component';
 import { Contador } from './contador/contador.component';
 import { ListaComponent } from './lista/lista.component';
 import { AlumnosModule } from './alumnos/alumnos.module';
-import { MainPageComponent } from './brawl-stars/main-page/main-page.component';
+import { BrawlStarsModule } from './brawl-stars/brawl-stars.module';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     Contador,
-    ListaComponent,
-    MainPageComponent
+    ListaComponent
+    
    
     
   ],
   imports: [
     BrowserModule,
-    AlumnosModule
+    AlumnosModule,
+    BrawlStarsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
