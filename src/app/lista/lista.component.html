@@ -1,10 +1,7 @@
-
-
 <h1>Lista</h1>
-
-<ul>
-    <div *ngFor="let item of compra">
-       Item: {{item.element}}, quantity: {{item.quantity}} 
-       
+<div class="carrito">
+    <div class="item" *ngFor="let item of compra">
+        <p>{{item.element}}</p>
+        <p>[{{item.quantity}}]</p>
     </div>
-</ul>
+</div>

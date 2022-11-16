@@ -1,33 +1,28 @@
-import { Component, OnInit } from '@angular/core';
-import { Player } from '../interfaces/Player';
+import { Component } from '@angular/core';
+import { Character } from '../interfaces/character';
+// import { BSService } from '../services/brawl-stars.service';
 
 @Component({
   selector: 'app-main-page',
   templateUrl: './main-page.component.html',
-  styleUrls: ['./main-page.component.css']
+  styleUrls: ['./main-page.component.css', '../character/character.component.css']
 })
-export class MainPageComponent implements OnInit {
-  constructor() { }
-  ngOnInit(): void {
+export class MainPageComponent  {
+  // //guarda los personajes de forma centralizada, no hace falta enviarla de padres a hijos
+  // personajes:Character[]; //hace falta declarar la propiedad
+  // constructor(bsService:BSService){
+  //   console.log('Constructor main page')
+  //   this.personajes = bsService.personajes;
+  // }
+
+  // nuevo:Character = {name:"Gabi", health:1500}
+
+  // annadir(character:Character){
+  //   this.personajes.push({...character});//{hace una copia}
+  // }
+
+  constructor() { 
   }
 
-  nuevo={
-    name: "",
-    health: 0
-  }
-
-  players : Player[]=[
-    { name: 'Shelly', health: 3600},
-    { name: 'Nita', health: 3800},
-    { name: 'Colt', health: 2800},
-    { name: 'Ciry', health: 8000},
-    { name: 'Gerald', health: 1200},
-    { name: 'Triss', health: 800},
-    { name: 'Yenny', health: 2100},
-    { name: 'Arthur', health: 3100},
-]
-  
-
- 
-
+  nuevo:Character = {name:"Manolo", health:200}
 }

@@ -7,15 +7,11 @@ import { ListaComponent } from './lista/lista.component';
 import { AlumnosModule } from './alumnos/alumnos.module';
 import { BrawlStarsModule } from './brawl-stars/brawl-stars.module';
 
-
 @NgModule({
   declarations: [
     AppComponent,
     Contador,
     ListaComponent
-    
-   
-    
   ],
   imports: [
     BrowserModule,

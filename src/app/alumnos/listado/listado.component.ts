@@ -1,3 +1,4 @@
+import { LocationStrategy } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,19 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./listado.component.css']
 })
 export class ListadoComponent implements OnInit {
-  alumnos:string[] =[
-    'Javier','Sergio','Pilar','Vicente'
-  ]
-  aprobados:string[]=[
-
-  ]
   constructor() { }
-
   ngOnInit(): void {
   }
-  aprobar(){
-    this.aprobados.push(this.alumnos.pop() || '')
-    
-    
+
+  alumnos:string[] = ["Pilar","Vicente", "Sergio", "Javier"]
+  aprobados:string[] = [];
+  aprobar(): void{
+    if(this.alumnos.length != 0){
+      this.aprobados.push(this.alumnos.pop() || "");
+    }
   }
 }

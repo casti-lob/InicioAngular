@@ -1,9 +1,12 @@
-.red{
-    background-color: red;
+
+.row{
+    display: flex;
 }
-.green{
-    background-color: greenyellow;
+.col{
+    flex-grow: 1;
+    margin-right: 1em;
 }
-.yellow{
-    background-color: yellow;
+input{
+    display: block;
+    margin: 1em;
 }

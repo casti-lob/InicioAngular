@@ -6,18 +6,13 @@ import { ListadoComponent } from './listado/listado.component';
     declarations: [
         ListadoComponent
     ],
-    exports : [
+    // vamos a usar este componente en varios módulos
+    exports: [
         ListadoComponent
     ],
-    imports : [
+    imports: [
         CommonModule
     ]
 })
-export class AlumnosModule{}
 
-
-
-
-
-
-
+export class AlumnosModule {}

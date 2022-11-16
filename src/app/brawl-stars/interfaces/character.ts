@@ -1,6 +1,4 @@
-
-export interface Character{
-    
-    name: string,
-    health: number
+export interface Character {
+    name:string,
+    health:number
   }
